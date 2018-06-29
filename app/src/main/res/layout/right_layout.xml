@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_time"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:paddingTop="5dp"
+        android:text="2018/5/11 21:35:37"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_message"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/e"
+            android:gravity="center"
+            android:text="哇 我竟然做出来了 我好激动！！真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试真的是我要疯狂测试"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/right_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="网友"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ee" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

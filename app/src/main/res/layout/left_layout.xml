@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/left_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:paddingTop="5dp"
+        android:text="2018/5/11 21:02:11"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="祥仔"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/qiaoqiao" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/left_message"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/qiao"
+            android:gravity="center"
+            android:text="hello~第一次使用 请多指教~"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

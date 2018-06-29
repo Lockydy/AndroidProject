@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/beijing">
+
+    <RelativeLayout
+        android:id="@+id/top_name"
+        android:background="#3A4449"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="AI小助手祥仔"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#3A4449">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="243dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input"
+            android:inputType="textNoSuggestions"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="发送"
+            android:textColor="#6699FF"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/input_message"/>
+
+        <Button
+            android:id="@+id/yuyin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="语音"
+            android:onClick="start"
+            android:textColor="#6699FF"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@id/input_message" />
+    </RelativeLayout>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view"
+            android:layout_above="@id/chat_bottom"
+            android:layout_below="@id/top_name"
+            android:divider="@null"
+            android:dividerHeight="3dp">
+    </ListView>
+</RelativeLayout>
